@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+    <meta name="viwport" content = "width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/x.icon" href="logo.png">
+    <title> Pedidos </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif
+        
+        }
+        /*Estilo de header*/
+        header{
+            background-color: #0D2922;
+            text-align: center;
+            color: white;
+        }
+        /*nuevo página raul perez*/
+        #logo {
+            margin:auto; 
+            height: 200px;
+            width: 450px;
+            background-image: url(logo.png) ; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            
+        }
+        #logo h2{ 
+            font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+            font-size: 30px;
+            
+        }
+        /*Crear dos columnas con la misma posición en la fila*/
+        nav {
+            float: center;
+            /*only for demostration, should be removed*/
+            height: 75px;
+            background: #55736B;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            display: inline-block;
+            padding: 18px;
+        }
+        nav ul li {
+            float: left;
+            margin-top: 20px;
+        }
+        nav ul li a { 
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 18px;
+
+        }
+        nav ul li a:hover{ 
+            background-color: #929fb3;
+            height: 60px;
+        }
+        /*mios*/
+        th {
+            background-color: #55736B;
+            color: black;
+            text-align: center;
+        }
+        td{
+            background-color:#929fb3;
+        }
+        h1 {
+            background-color: #0D2922;
+            height: 40px;
+            text-align: center;
+            color: white;
+            text-size-adjust: 100px ;
+
+        }
+        h2 {
+            background-color: white;
+            height: 25px;
+            text-align: left;
+            color: black;
+        }
+        h3 {
+             background-color:white;
+            text-align: left;
+        }
+        h4{
+            background-color:white;
+;
+            text-align: center;
+        }
+        dt { 
+            font-weight: bold;
+            padding-top: 10px;
+            height: 30px;
+            background-position: center; 
+            background-repeat:inherit;
+            color: white;
+        }
+        dl {
+            background-color: #0D2922;
+            text-align: left;
+        }
+        ol{
+            background-color: #0D2922;
+            color: white
+        }
+        table{
+            background-color: #0D2922;
+            text-align: center;
+            tab-size: 30px;
+            block-size: 40px;
+            
+        }
+        section { 
+            background-color: #0D2922;
+        }
+       
+        p {
+            background-color:#0D2922;
+            background-repeat:inherit;
+            color: white;
+            text-align: center;
+            image-orientation: from-image;
+        }
+        article {
+            background-color:#0D2922;
+            color: black;
+            text-align: left;
+        }
+
+        /*Estilo de footer*/
+        footer{
+            background-color: #55736B;
+            padding: 25px;
+            height:fit-content
+        }
+        #redes {
+            text-align: center;
+            background-color: #55736B;
+        }
+        label {
+            text-align: left;
+            color: white;
+        }
+        input {
+            text-align: left;
+            color: #0D2922
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <header>  <!-- Logo y titulo -->
+        <div id ="logo"> </div>
+        <nav>
+            <ul>
+                <li><a href="pasteleria.html">Inicio</a> </li>
+                <li> <a href="decoracion.html">Decoraciones</a> </li>
+                <li><a href="pedidos.html">Hacer pedido</a></li>
+
+            </ul>
+        </nav>
+   
+</header> 
+
+<h1>Formulario</h1>
+<h2>Datos de contacto</h2>
+<article>
+    <label for="nombre">Nombre</label> <br>
+        <input type="text" id="nombre" name="nombre"> <br><br>
+    <label for="tel">Teléfono </label> <br>
+        <input type="tel" id="tel" name="tel" maxlength="10"> <br><br>
+    <label for="correo1">Email</label><br>
+        <input type="email" id="correo1" name="correo1"> <br><br>
+<hr>
+<h2>Especificaciones del pastel </h2>
+   <br>  <label for="Descripción">Descripción del pastel (algún mensaje que desee poner)</label> <br>
+        <input type="text" id="Descripción name="Descripción> <br><br>
+
+     <label for="tam">Tamaño del pastel</label> <br>
+        <select name="tam" id="tam">
+            <option value="15">15 cm</option>
+            <option value="20">20 cm</option>
+            <option value="25">25 cm</option>
+            <option value="30">30cm </option>
+            <option value="35">35 cm</option>
+            <option value="40">40cm </option>
+        </select>
+    <br><br>
+        <label for="sab"> Seleccione el sabor (sabores) de su pastel</label> <br><br>
+        
+            <input type="checkbox" name="sab1" id="sab1" value="Cafe">
+            <label for="sab1"> Café </label><br>
+
+            <input type="checkbox" name="sab2" id="sab2" value=" Coco">
+            <label for="sab2"> Coco </label><br>
+
+            <input type="checkbox" name="sab3" id="sab3" value="Moka ">
+            <label for="sab3"> Moka </label><br>
+
+            <input type="checkbox" name="sab4" id="sab4" value="Tres Leches">
+            <label for="sab4"> Tres Leches </label><br>
+
+            <input type="checkbox" name="sab5" id="sab5" value="Vainilla  ">
+            <label for="sab5"> Vainilla </label><br>
+
+            <input type="checkbox" name="sab6" id="sab6" value="Nuez">
+            <label for="sab6"> Nuez </label><br>
+
+            <input type="checkbox" name="sab7" id="sab7" value="Naranja ">
+            <label for="sab7"> Naranja</label><br>
+
+            <input type="checkbox" name="sab8" id="sab8" value=" Zanahoria">
+            <label for="sab8"> Zanahoria </label><br>
+
+            <input type="checkbox" name="sab9" id="sab9" value="Chocolate">
+            <label for="sab9"> Chocolate</label><br><br>
+
+ 
+            <input type="checkbox" name="sab10" id="sab10" value="Oreo">
+            <label for="sab10"> Óreo</label><br>
+
+            <input type="checkbox" name="sab11" id="sab11" value="Tiramisú ">
+            <label for="sab11"> Tiramisú</label><br>
+
+            <input type="checkbox" name="sab12" id="sab12" value=" Chocoqueso">
+            <label for="sab12"> Chocoqueso </label><br>
+
+            <input type="checkbox" name="sab13" id="sab13" value="Chocoflan">
+            <label for="sab13"> Chocoflan</label><br>
+
+            <input type="checkbox" name="sab14" id="sab14" value=" Red Velvet ">
+            <label for="sab14"> Red Velvet</label><br>
+
+<br><br>
+
+    <label for="relleno"> Seleccione el relleno  de su pastel</label> <br>
+
+            <input type="checkbox" name="relleno 1" id="relleno1" value="Fresa">
+            <label for="relleno1"> Fresa </label><br>
+
+            <input type="checkbox" name="relleno 2" id="relleno 2" value=" Durazno">
+            <label for="relleno 2"> Durazno </label><br>
+
+            <input type="checkbox" name="relleno3" id="relleno 3" value="Mango ">
+            <label for="relleno 3"> Mango </label><br>
+
+            <input type="checkbox" name="relleno 4" id="relleno 4" value="Piña ">
+            <label for="relleno 4"> Piña  </label><br>
+
+            <input type="checkbox" name="relleno 5" id="relleno 5" value="Kiwi  ">
+            <label for="relleno 5"> Kiwi </label><br>
+
+            <input type="checkbox" name="relleno 6" id="relleno 6" value="Nuez">
+            <label for="relleno 6"> Nuez </label><br>
+
+            <input type="checkbox" name="relleno 7" id="relleno 7" value="CremaPaste">
+            <label for="relleno 7"> Crema Pastelera</label><br>
+
+            <input type="checkbox" name="relleno 8" id="relleno 8" value=" Mermelada">
+            <label for="relleno 8"> Mermelada </label><br>
+
+            <input type="checkbox" name="relleno 9" id="relleno 9" value="Chocolate">
+            <label for="relleno 9"> Chocolate</label><br>
+
+
+            <input type="checkbox" name="relleno 10" id="relleno 10" value="Oreo">
+            <label for="relleno 10"> Óreo</label><br><br>
+
+            <input type="checkbox" name="relleno 11" id="relleno 11" value="Nutella ">
+            <label for="relleno 11"> Nutella</label><br>
+
+            <input type="checkbox" name="relleno 12" id="relleno 12" value=" Cajeta">
+            <label for="relleno 12"> Cajeta </label><br>
+
+            <input type="checkbox" name="relleno 13" id="relleno 13" value="Zarzamora">
+            <label for="relleno13"> Zarzamora</label><br>
+        
+<br><br>
+<label for="Cobertura"> Seleccione la cobertura para su pastel</label> <br> <br>
+
+            <input type="radio" name="cobertura" id="Betún" value="Betún">
+            <label for="roja">Betún</label>
+
+            <input type="radio" name="cobertura" id="Cremab" value=" "Cremab>
+            <label for="verde">Crema Batida</label>
+
+            <input type="radio" name="cobertura" id="Chantillí" value="Chantillí">
+            <label for="guacamole">Chantillí</label>
+
+            <input type="radio" name="cobertura" id="Fondant" value="Fondant">
+            <label for="roja">Fondant</label>
+
+            <input type="radio" name="cobertura" id="Buttercream" value="Buttercream">
+            <label for="verde">Buttercream</label><br><br>
+
+
+<br><br>
+<label for="decoracion"> Seleccione la decoracion de su pastel</label> <br><br>
+
+            <input type="checkbox" name=" 1" id="1" value=" Flores comestibles">
+            <label for="1"> Flores comestibles  </label><br>
+  
+            <input type="checkbox" name=" 2" id=" 2" value="  Mariposas comestibles ">
+            <label for=" 2"> Mariposas comestibles </label><br>
+
+            <input type="checkbox" name="" id=" 3" value="Planillas impresas  ">
+            <label for=" 3"> Planillas impresas </label><br> <br>
+
+            <input type="checkbox" name=" 4" id=" 4" value="Perlas de chocolate azul  ">
+            <label for=" 4"> Perlas de chocolate azul </label><br>
+
+            <input type="checkbox" name=" 5" id=" 5" value=" Perlas de chocolate rosa	  ">
+            <label for=" 5"> Perlas de chocolate rosa</label><br>
+
+            <input type="checkbox" name=" 6" id=" 6" value="Perlas de chocolate morada	 ">
+            <label for=" 6"> Perlas de chocolate morada	 </label><br>
+
+            <input type="checkbox" name=" 7" id=" 7" value=" Perlas de chocolate plateada ">
+            <label for=" 7"> Perlas de chocolate plateada</label><br>
+
+            <input type="checkbox" name=" 8" id=" 8" value="Perlas de chocolate dorada  ">
+            <label for=" 8"> Perlas de chocolate dorada  </label><br>
+
+            <input type="checkbox" name=" 9" id=" 9" value="Perlas de chocolate verde ">
+            <label for=" 9"> Perlas de chocolate verde	  </label><br>
+
+            <input type="checkbox" name=" 10" id=" 10" value="Perlas de chocolate amarillo ">
+            <label for=" 10"> Perlas de chocolate amarillo  </label><br><br>
+
+            <input type="checkbox" name=" 11" id=" 11" value="Bolas de chocolate azul	  ">
+            <label for=" 11"> Bolas de chocolate azul	  </label><br>
+
+            <input type="checkbox" name=" 12" id=" 12" value=" Bolas de chocolate rosa	">
+            <label for=" 12"> Bolas de chocolate rosa	  </label><br>
+
+            <input type="checkbox" name=" 13" id=" 13" value=" Bolas de chocolate morada	 ">
+            <label for="13">   Bolas de chocolate morada	 </label><br>
+
+            <input type="checkbox" name=" 14" id=" 14" value=" Bolas de chocolate plateada	  ">
+            <label for=" 14">  Bolas de chocolate plateada	   </label><br>
+
+            <input type="checkbox" name=" 15" id=" 15" value="Bolas de chocolate dorada   ">
+            <label for=" 15"> Bolas de chocolate dorada	  </label><br>
+
+            <input type="checkbox" name=" 16" id=" 16" value="Bolas de chocolate verde ">
+            <label for=" 16"> Bolas de chocolate verde   </label><br>
+
+            <input type="checkbox" name=" 17" id=" 17" value=" Bolas de chocolate amarillo">
+            <label for=" 17">Bolas de chocolate amarillo	    </label><br><br>
+         
+            <input type="checkbox" name=" 18" id=" 18" value="Chispas de chocolate  ">
+            <label for=" 18">  Chispas de chocolate </label><br>
+
+            <input type="checkbox" name=" 19" id=" 19" value="Chispas de colores ">
+            <label for=" 19">Chispas de colores  </label><br><br>
+
+            <input type="checkbox" name=" 20" id=" 20" value="Hojas doradas ">
+            <label for=" 20"> Hojas doradas </label><br>
+
+            <input type="checkbox" name=" 21" id=" 21" value="Hojas plateadas  ">
+            <label for=" 21">Hojas plateadas  </label><br><br>
+            
+            <input type="checkbox" name=" 12" id=" 22" value="Topper: Feliz cumpleaños 1  ">
+            <label for=" 22">Topper: Feliz cumpleaños 1   </label><br>
+
+            <input type="checkbox" name=" 23" id=" 23" value="Topper: Happy birthday 1 ">
+            <label for="23"> Topper: Happy birthday 1 </label><br> 
+            
+            <input type="checkbox" name=" 24" id=" 24" value=" Topper: Happy birthday 2 helado   ">
+            <label for=" 24"> Topper: Happy birthday 2 helado     </label><br>
+
+            <input type="checkbox" name=" 25" id=" 25" value=" Topper: Mi graduación  ">
+            <label for=" 25">Topper: Mi graduación   </label><br>
+
+            <input type="checkbox" name=" 26" id=" 26" value="Topper: Feliz cumpleaños 2  ">
+            <label for=" 26">Topper: Feliz cumpleaños 2    </label><br>
+
+            <input type="checkbox" name=" 27" id=" 27" value="Topper: Happy birthday 3 flor ">
+            <label for=" 27">Topper: Happy birthday 3 flor    </label><br>
+
+            <input type="checkbox" name=" 28" id=" 28" value=" Topper: Happy birthday 4 circular ">
+            <label for=" 28"> Topper: Happy birthday 4 circular  </label><br>
+
+            <input type="checkbox" name=" 29" id=" 29" value="Happy birthday 5 HP rayo ">
+            <label for=" 29">Topper: Happy birthday 5 HP rayo  </label><br>
+
+            <input type="checkbox" name=" 13" id=" 30" value="Topper: Happy birthday 6 HP ">
+            <label for=" 30">Topper: Happy birthday 6 HP  </label><br>
+
+            <input type="checkbox" name=" 31" id="31" value=" Topper: Feliz día ">
+            <label for="31"> Topper: Feliz día </label><br>
+
+
+<br><br>   
+<label for="date"> Seleccione el día que requiere la entrega de su pastel</label> <br><br>   
+<input type="date" name="fecha1" id="fecha1"><br>     
+
+<br><br> 
+
+  
+    <input type="submit" name="boton1" id="boton1" value="Enviar pedido" onclick="alert('Pedido Enviado. Pronto nos comunicaremos con usted.');"> 
+    <input type="reset"><br>
+</article>
+
+
+
+    <footer> 
+        <h1> Contacto</h1>
+        <h2 style="background-color: #55736B; text-align: center;"> PASTELERIAS JOSLISZ</h2>
+        <hr>
+        <p id="redes"> 
+            Siguenos tambien en: <br>
+        
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="facebook" width="50" height="50">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="instagram" width="50" height="50">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkdin" width="50" height="50">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="twitter" width="50" height="50">
+            <img src="https://cdn-icons-png.flaticon.com/512/49/49440.png" alt="pinterest" width="50" height="50">
+       
+        <br> Dirección: C. Luis Solis, Mz. 78, Lt. 9. Santa Martha, Estado de México. 
+        <br> Tel: 5532738293
+        <br> pasteleriasjolisz@gmail.com           
+        <br> Horario de atención: Lunes a Sábado, de 9:00hrs a 18:00hrs        
+
+         </p>
+
+        
+
+    </footer>
+
+</body>
+</html>
+
